@@ -161,129 +161,166 @@ footer p {
 
 /* -----------
   DEVICES > 600px
------------- */
-@media screen and (min-width: 600px) {
+  ------------ */
+  @media screen and (min-width: 600px) {
 
-/* TOP MENU */
+    /* TOP MENU */
 
+    header ul {
+      position: absolute;
+      top: 8%;
+      text-align: center;
+      background: white;
+    }
 
-header ul {
-  position: absolute;
-  top: 8%;
-  text-align: center;
-  background: white;
-}
+    header li, header li a {
+      display: inline-block;
+      background-color: transparent;
+      border-bottom: none;
+      color: #4a525f;
+      padding: 5px;
+    }
 
-header li, header li a {
-  display: inline-block;
-  background-color: transparent;
-  border-bottom: none;
-  color: #4a525f;
-  padding: 5px;
-}
+    header li {
+      border-right: 1px solid #4a525f;
+    }
 
-header li {
-  border-right: 1px solid #4a525f;
-}
+    header li:last-child {
+      border-right: none;
+    }
 
-header li:last-child {
-  border-right: none;
-}
+    header li:hover, header li a:hover{
+      background-color: #d8cccc;
+    }
 
-header li:hover, header li a:hover{
-  background-color: #d8cccc;
-}
+    /* TOP MENU END */
 
-/* TOP MENU END */
+    header p {
+      bottom: 40%;
+      font-size: 2em;
+    }
 
-header p {
-  bottom: 40%;
-  font-size: 2em;
-}
+    #apply-btn {
+      bottom: 30%;
+    }
 
-#apply-btn {
-  bottom: 30%;
-}
+    .row1-1 {
+      width: 50%;
+      margin-top: 2%;
+    }
 
-.row1-1 {
-  width: 50%;
-  margin-top: 2%;
-}
+    .row1-2 {
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      background: white;
+    }
 
-.row1-2 {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  background: white;
-}
+    .row1-2 p {
+      max-width: 60%;
+    }
 
-.row1-2 p {
-  max-width: 60%;
-}
+    .row2 p {
+      font-size: 2em;
+    }
 
-.row2 p {
-  font-size: 2em;
-}
+    .sarah, .tom {
+      width: 50%;
+      float: left;
+      padding-bottom: 2%;
+    }
 
-.sarah, .tom {
-  width: 50%;
-  float: left;
-  padding-bottom: 2%;
-}
+    .row3 {
+      display: flex;
 
-.row3 {
-  display: flex;
+    }
 
-}
+    .row3-1 {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      background: white;
+    }
 
-.row3-1 {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background: white;
-}
+    .row3-1 p {
+      max-width: 60%;
+    }
 
-.row3-1 p {
-  max-width: 60%;
-}
+    .row3-2 {
+      flex: 1;
+    }
 
-.row3-2 {
-  flex: 1;
-}
+    /* FOOTER MENU */
 
-/* FOOTER MENU */
+    footer ul {
+      text-align: center;
+      background-color: #8393ca;
+      margin: 0;
+    }
 
-footer ul {
-  text-align: center;
-  background-color: #8393ca;
-  margin: 0;
-}
+    footer li, footer li a {
+      display: inline-block;
+      background-color: transparent;
+      border-bottom: none;
+      padding: 5px;
+    }
 
-footer li, footer li a {
-  display: inline-block;
-  background-color: transparent;
-  border-bottom: none;
-  padding: 5px;
-}
+    footer li {
+      border-right: 1px solid #4a525f;
+    }
 
-footer li {
-  border-right: 1px solid #4a525f;
-}
+    footer li:last-child {
+      border-right: none;
+    }
 
-footer li:last-child {
-  border-right: none;
-}
+    foooter li:hover, footer li a: hover {
+      background: #3e486a;
+    }
 
-foooter li:hover, footer li a: hover {
-  background: #3e486a;
-}
+    footer p {
+      padding-top: 2%;
+      background-color: #e0e0eb;
+      font-size: 1.2em;
+    }
+  }
 
-footer p {
-  padding-top: 2%;
-  background-color: #e0e0eb;
-  font-size: 1.2em;
-}
+  /* -----------
+    LARGE DEVICES > 900px
+    ------------ */
 
-}
+    @media screen and (min-width: 900px) {
+      body {
+        max-width: 1100px;
+      }
+      header ul {
+        max-width: 1100px;
+        background-color: transparent;
+        text-align: right;
+        top: 1%;
+      }
+
+      header p {
+        font-size: 2.2em;
+        font-weight: bold;
+        max-width: 1100px;
+      }
+
+      #logo p {
+        text-align: left;
+        padding-left: 1%;
+      }
+
+      .row1-1 {
+        font-size: 1.2em;
+      }
+
+      .row1-2, row2 p, row3-1{
+        font-size: 2.5em;
+      }
+
+      footer p {
+        font-size: 1.5em;
+      }
+    }
