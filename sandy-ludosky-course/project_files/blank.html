@@ -10,19 +10,19 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-  <!-- CSS3 Animate
+  <!-- CSS3 Animate -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
--->
 
-<!-- Navigation | Hover Effect: http://tympanus.net/Development/CreativeLinkEffects/
+
+<!-- Navigation | Hover Effect: http://tympanus.net/Development/CreativeLinkEffects/ -->
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/component.css">
 <link rel="stylesheet" type="text/css" href="css/demo.css">
--->
 
-<!-- Image | Hover Effect :http://recipes.joomla-monster.com/animated-hover-effects-for-images/#.VARysGRdUoY
+
+<!-- Image | Hover Effect :http://recipes.joomla-monster.com/animated-hover-effects-for-images/#.VARysGRdUoY -->
 <link rel="stylesheet" type="text/css" href="css/hover_effect.css">
--->
+
 
 <!-- Favicon
 <link rel="shortcut icon" href="https://placeimg.com/16/16/arch" >
@@ -37,19 +37,19 @@
 
   <header>
     <!-- Navigation -->
-    <nav>
+    <nav class="cl-effect-5" id="cl-effect-5">
       <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">Our Story</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#"><span data-hover="Home">Home</span></a></li>
+        <li><a href="#about"><span data-hover="Our Story">Our Story</span></a></li>
+        <li><a href="#destinations"><span data-hover="Destinations">Destinations</span></a></li>
+        <li><a href="#contact"><span data-hover="Contact us">Contact us</span></a></li>
       </ul>
     </nav>
 
     <!-- Banner section -->
     <section id='banner' class="box">
 
-      <div>
+      <div class="animated bounceInDown">
         <i class="fa fa-globe fa-5x"></i>
         <h1>Bon Voyage <br><em>Travel the World</em></h1>
         <p>Your tagline here</p>
@@ -80,19 +80,56 @@
   <section id="destinations" class="box">
     <h2>Our destinations</h2>
     <h3>Travel with Us...</h3>
-    <div class="thumb">
-      <img src="http://lorempixel.com/250/170/city/5/" alt="" />
-    </div>
-    <div class="thumb">
-      <img src="http://lorempixel.com/250/170/city/4/" alt="" />
-    </div>
-    <div class="thumb">
-      <img src="http://lorempixel.com/250/170/city/1/" alt="" />
-    </div>
-    <div class="thumb">
-      <img src="http://lorempixel.com/250/170/city/2/" alt="" />
-    </div>
 
+    <div class="jm-mainpage-box">
+      <!-- thumbnail -->
+       <div class="jm-item first">
+        <div class="jm-item-wrapper">
+          <div class="jm-item-image">
+              <img src="http://lorempixel.com/245/170/city/4/" alt="Travel Destination" />
+            <span class="jm-item-overlay"> </span>
+            <div class="jm-item-button"><a href="#">View</a></div>
+          </div>
+          <div class="jm-item-title">New York, USA</div>
+        </div>
+      </div>
+
+      <!-- thumbnail -->
+      <div class="jm-item first">
+        <div class="jm-item-wrapper">
+          <div class="jm-item-image">
+              <img src="http://lorempixel.com/245/170/city/2/" alt="Travel Destination" />
+            <span class="jm-item-overlay"> </span>
+            <div class="jm-item-button"><a href="#">View</a></div>
+          </div>
+          <div class="jm-item-title">Vegas, USA</div>
+        </div>
+      </div>
+
+      <!-- thumbnail -->
+      <div class="jm-item first">
+        <div class="jm-item-wrapper">
+          <div class="jm-item-image">
+              <img src="http://lorempixel.com/245/170/city/9/" alt="Travel Destination" />
+            <span class="jm-item-overlay"> </span>
+            <div class="jm-item-button"><a href="#">View</a></div>
+          </div>
+          <div class="jm-item-title">SF, USA</div>
+        </div>
+      </div>
+
+      <!-- thumbnail -->
+      <div class="jm-item first">
+        <div class="jm-item-wrapper">
+          <div class="jm-item-image">
+              <img src="http://lorempixel.com/245/170/city/7/" alt="Travel Destination" />
+            <span class="jm-item-overlay"> </span>
+            <div class="jm-item-button"><a href="#">View</a></div>
+          </div>
+          <div class="jm-item-title">Sidney, Australia</div>
+        </div>
+      </div>
+    </div> <!--End thumbnails -->
     <br>
     <div class="clearfix"></div>
   </section>
@@ -110,7 +147,7 @@
   <section id="contact" class="box">
     <h2>Contact Us</h2><br>
     <h3>Travel with Us</h3>
-    <ul>
+    <ul class="hide-mobile">
       <li><a class="twitter" href="https://twitter.com/"></a></li>
       <li><a class="googleplus" href="https://plus.google.com/"></a></li>
       <li><a class="fb" href="https://facebook.com/"></a></li>
@@ -119,12 +156,22 @@
       <li><a class='linkedin' href="https://linkedin.com/"></a></li>
       <li><a class='wordpress' href="https://twitter.com/"></a></li>
     </ul>
+
+    <ul class="visible-mobile">
+      <li><a  href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://plus.google.com/">Google+</a></li>
+      <li><a href="https://facebook.com/">Facebook'</a></li>
+      <li><a href="https://youtube.com/">Youtube</a></li>
+      <li><a href="https://twitter.com/">Github</a></li>
+      <li><a href="https://linkedin.com/">Linkedin</a></li>
+      <li><a href="https://twitter.com/">LaLala</a></li>
+    </ul>
   </section>
 
   <footer>
     <p>Copyright &copy All Rights Reserved - 2014</p>
 
-    <p class='right'>Coded with <span class='heart'></span>&hearts; by <em>Sandy Ludosky</em></p>
+    <p class='right'>Coded with <span class='heart'></span>&hearts; by <em>Murilo Frade</em></p>
 
     <div class="clearfix"></div>
   </footer>

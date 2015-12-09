@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Copyright (C) joomla-monster.com
 # License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
-# Website: http://www.joomla-monster.com/ 
+# Website: http://www.joomla-monster.com/
 # Support: info@joomla-monster.com
 ---------------------------------------------------------------*/
 
@@ -13,13 +13,13 @@ html, body {
 
 #page-wrap {
 	min-height: 100%;
-	margin-bottom: -90px; 
+	margin-bottom: -90px;
 }
 
 #page-wrap:after {
 	content: "";
 	display: block;
-	height: 90px; 
+	height: 90px;
 }
 
 .brand {
@@ -112,7 +112,7 @@ footer {
 	position: absolute;
 	left: -10px;
 	bottom: 17px;
-	background: #FF6B0E;
+	background: #3498db;
     color: #FFFFFF;
     font-size: 1.4em;
 	line-height: 1.5em;
@@ -167,7 +167,7 @@ footer {
 }
 
 .jm-item-button a:hover {
-	background: #3b3b3b;	
+	background: #3b3b3b;
 }
 
 /** first **/
@@ -177,11 +177,11 @@ footer {
 	-moz-transition: all 0.5s ease-in 0.5s;
 	-o-transition: all 0.5s ease-in 0.5s;
 	transition: all 0.5s ease-in 0.5s;
-	top: -50px;	
+	top: -50px;
 }
 
 .first .jm-item-wrapper:hover .jm-item-button {
-	top: 20%;	
+	top: 20%;
 }
 
 /** second **/
@@ -209,7 +209,7 @@ footer {
 	padding: 10px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;	
+	-webkit-box-sizing: border-box;
 	background: rgba(52, 152, 219,.4);
 	color: #fff;
 	padding-top: 70px;

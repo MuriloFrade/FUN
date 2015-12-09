@@ -39,11 +39,11 @@ p {
 
 /*Header - navigation*/
 nav #menu {
-  text-align: center;
   border-bottom: 1px solid #434a5c;
   padding: 5px 0;
   position: fixed;
   width: 100%;
+  text-align: center;
   background: url('../images/bg-tile.gif');
   z-index: 9999;
 }
@@ -51,6 +51,7 @@ nav #menu {
 nav #menu li {
   display: inline-block;
   padding: 20px 35px;
+  width: 14rem;
 
 }
 nav #menu li:hover {
@@ -208,34 +209,55 @@ section#contact li:hover a {
 a.fb {
   background: url(../images/social_media.png) -256px top;
 }
-/* section#contact li:hover a.fb {
+section#contact li:hover a.fb {
 background: url(../images/social_media.png) -256px bottom;
 }
-*/
+
 a.twitter {
   background: url(../images/social_media.png) -512px top;
+}
+section#contact li:hover a.twitter {
+background: url(../images/social_media.png) -512px bottom;
 }
 
 a.youtube {
   background: url(../images/social_media.png) -640px top;
 }
+section#contact li:hover a.youtube {
+background: url(../images/social_media.png) -640px bottom;
+}
 
 a.googleplus {
   background: url(../images/social_media.png) -768px top;
+}
+section#contact li:hover a.googleplus {
+background: url(../images/social_media.png) -768px bottom;
 }
 
 a.github {
   background: url(../images/social_media.png) left top;
 }
+section#contact li:hover a.github {
+background: url(../images/social_media.png) left bottom;
+}
 
 a.linkedin {
   background: url(../images/social_media.png) -384px top;
+}
+section#contact li:hover a.linkedin {
+background: url(../images/social_media.png) -384px bottom;
 }
 
 a.wordpress {
   background: url(../images/social_media.png) -128px top;
 }
+section#contact li:hover a.wordpress {
+background: url(../images/social_media.png) -128px bottom;
+}
 
+.visible-mobile {
+  display: none;
+}
 
 footer {
   background: #2980b9;
@@ -262,4 +284,85 @@ span.heart{
 }
 .clearfix {
   clear: both;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+
+  nav #menu li {
+    display: inline-block;
+    padding: 20px 20px;
+    width: 11rem;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav #menu {
+    position: absolute;
+  }
+  nav #menu li {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0px ;
+  }
+
+  section.box {
+    padding: 20px 20px;
+  }
+
+  /*Header - banner section*/
+  section#banner {
+    padding-top: 240px;
+  }
+  #banner h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  h2, h3 {
+    font-size: 20px;
+  }
+  section#about h2:nth-of-type(1),
+  section#about h2:nth-of-type(2) {
+    text-align: center;
+  }
+  section#about div {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section#about h2 {
+    padding-bottom: 5px;
+    margin: 20px 0;
+  }
+  section#about img {
+    float: none;
+  }
+
+  section#contact a {
+    height: 28px;
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+  }
+  .hide-mobile {
+    display: none;
+  }
+
+  footer p {
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+  footer .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .visible-mobile {
+    display: block;
+  }
+
 }
